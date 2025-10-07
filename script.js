@@ -377,7 +377,7 @@ function loadAllQuestions() {
     main.appendChild(questionBox);
   });
   const finishButton = document.createElement("button");
-  finishButton.textContent = "Zakończ quiz";
+  finishButton.textContent = "Zakończ test";
   finishButton.addEventListener("click", showResults);
   finishButton.id = "finishBtn";
   finishButton.disabled = selectedAnswers.includes(null);
@@ -478,3 +478,4 @@ function checkReviewMode() {
 if (!checkReviewMode()) {
   loadAllQuestions();
 }
+
